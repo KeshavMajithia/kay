@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 
-const ADMIN_PASSWORD = 'loop2024';
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
 
 export default function Admin() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
